@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <EditText
+        android:id="@+id/edtA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nhập A"
+        android:inputType="number"
+        android:backgroundTint="@drawable/edittext_backgroundtint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nhập B"
+        android:inputType="number"
+        android:backgroundTint="@drawable/edittext_backgroundtint"
+        app:layout_constraintTop_toBottomOf="@id/edtA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <EditText
+        android:id="@+id/edtResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Kết quả"
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/edtB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/btnSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#6200EE"
+        android:text="TỔNG"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtResult" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
